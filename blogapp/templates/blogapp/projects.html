@@ -1,0 +1,90 @@
+{% extends 'blogapp/base.html' %}
+
+{% block content %}
+         <!-- Portfolio Starts -->
+         <div class="page page--current" id="portfolio">
+            <div class="w-full">
+              <!-- Section Title Starts -->
+               <div class="mx-auto w-full relative py-80 text-center xs:px-25 xs:pt-16 xs:pb-14 xs:bg-black-3 xs:border-b xs:border-black-4 xs:fixed xs:left-0 xs:right-0 xs:top-0 xs:z-20">
+                  <h2 class="text-fs-56 font-black font-Poppins uppercase text-white m-0 xs:text-fs-26 xs:text-left xs:leading-lh-1.2">
+                     my <span class="text-accent">portfolio</span>
+                  </h2>
+                  <span class="text-fs-110 absolute left-0 right-0 top-1/2 tracking-10 leading-lh-0.7 font-extrabold text-muted -translate-y-1/2 uppercase xs:hidden">works</span>
+               </div>
+               <!-- Section Title Ends -->
+               <!-- Portfolio Items Starts -->
+               <div class="-mt-15 pb-60 xs:pb-20 portfolio">
+                  <div id="grid-gallery" class="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
+                      <!-- Portfolio Grid Starts -->
+                     <div class="grid-wrap mx-auto mb-25">
+                        <ul class="gridlist">
+                           {% for project in projects %}
+                          <!-- Portfolio Grid Item Starts -->
+                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
+                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
+                                 <img class="block relative w-full rounded-5 transition duration-300" src="{{ project.image.url}}" alt="">
+                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
+                                    <span class="uppercase text-fs-18 text-white">
+                                    {{ project.title }}
+                                    </span>
+                                 </div>
+                              </figure>
+                           </li>
+                           <!-- Portfolio Grid Item Ends -->
+                           {% endfor %}
+                        </ul>
+                     </div>
+                     <!-- Portfolio Grid Ends -->
+                     <!-- Portfolio Details Starts -->
+                     <div class="slideshow">
+                        <ul>
+                           {% for project in projects %}
+                           <!-- Portfolio Item Detail Starts -->
+                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
+                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
+                                 <!-- Project Details Starts -->
+                                 <figcaption class="mb-15">
+                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">{{ project.title }}</h3>
+                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
+                                       <div class="w-1/2 xs:w-full mb-8">
+                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">{{ project.date }}</span>
+                                       </div>
+                                       <div class="w-1/2 xs:w-full mb-8">
+                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">{{ project.employer }}</span>
+                                       </div>
+                                       <div class="w-1/2 xs:w-full mb-8">
+                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">{{ project.language }}</span>
+                                       </div>
+                                       <div class="w-1/2 xs:w-full mb-8">
+                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">{{ project.preview }}</a></span>
+                                       </div>
+                                    </div>
+                                 </figcaption>
+                                 <!-- Project Details Ends -->
+                                 <!-- Main Project Content Starts -->
+<!--                                 <img class="block w-full rounded-5" src="{{ project.video.url }}" alt="Portolio Image">-->
+                                    <video class="block w-full rounded-5" controls>
+                                      <source src="{{ project.video.url }}" type="video/mp4">
+                                    </video>
+                                 <!-- Main Project Content Ends -->
+                              </figure>
+                           </li>
+                           <!-- Portfolio Item Detail Ends -->
+                           {% endfor %}
+                        </ul>
+                        <!-- Portfolio Navigation Starts -->
+                        <nav class="down-lg:fixed down-lg:top-0 down-lg:w-full down-lg:h-102 down-lg:bg-black-3 down-lg:z-10 down-lg:border-b down-lg:border-solid down-lg:border-b-black-4 xs:h-62">
+                           <span class="nav-prev fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:left-0 down-lg:left-30 xs:w-20 xs:top-21"><img class="block" src="assets/img/projects/navigation/left-arrow.png" alt="previous"></span>
+                           <span class="nav-next fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:right-0 down-lg:right-30 xs:w-20 xs:top-21"><img class="block" src="assets/img/projects/navigation/right-arrow.png" alt="next"></span>
+                           <span class="nav-close fixed cursor-pointer from-lg:top-30 down-lg:top-35 from-lg:right-30 down-lg:left-0 down-lg:right-0 down-lg:mx-auto down-lg:block down-lg:w-32 xs:w-20 xs:top-21"><img class="block" src="assets/img/projects/navigation/close-button.png" alt="close"> </span>
+                        </nav>
+                        <!-- Portfolio Navigation Ends -->
+                     </div>
+                     <!-- Portfolio Details Ends -->
+                  </div>
+               </div>
+               <!-- Portfolio Items Ends -->
+            </div>
+         </div>
+         <!-- Portfolio Ends -->
+{% endblock %}

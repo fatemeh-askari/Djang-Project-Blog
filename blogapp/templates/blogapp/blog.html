@@ -1,0 +1,70 @@
+{% extends 'blogapp/base.html' %}
+
+{% block content %}
+
+<div class="w-full h-full pages overflow-hidden">
+         <!-- Blog Starts -->
+         <div class="page page--current" id="blog">
+            <div class="w-full">
+              <!-- Section Title Starts -->
+               <div class="mx-auto w-full relative py-80 text-center xs:px-25 xs:pt-16 xs:pb-14 xs:bg-black-3 xs:border-b xs:border-black-4 xs:fixed xs:left-0 xs:right-0 xs:top-0 xs:z-20">
+                  <h2 class="text-fs-56 font-black font-Poppins uppercase text-white m-0 xs:text-fs-26 xs:text-left xs:leading-lh-1.2">
+                     my <span class="text-accent">blog</span>
+                  </h2>
+                  <span class="text-fs-110 absolute left-0 right-0 top-1/2 tracking-10 leading-lh-0.7 font-extrabold text-muted -translate-y-1/2 uppercase xs:hidden">posts</span>
+               </div>
+               <!-- Section Title Ends -->
+               <div class="xl:max-w-1140 lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
+                 <!-- Blog Posts Starts -->
+                  <div class="flex flex-wrap down-sm:flex-col">
+                      {% for post in posts %}
+                    <!-- Blog Post Starts -->
+                     <div class="w-1/3 down-xl:w-1/2 down-sm:w-full px-16 xs:px-0 mb-30">
+                        <div class="h-full bg-black-3 rounded-5">
+                           <div class="rounded-t-5 cursor-pointer post-thumb">
+                              <a href="{% url 'blogapp:post_detail' slug=post.slug  %}" class="rounded-t-5 relative overflow-hidden block group outline-0 transition-all duration-300">
+                              {% if post.image %}
+                                  <img class="rounded-t-5 transition-all duration-300 group-hover:scale-125" src="{{ post.image.url }}" alt="">
+                              {% endif %}
+                              </a>
+                           </div>
+                           <div class="bg-black-3 pt-20 px-25 pb-25 rounded-b-5">
+                              <a href="{% url 'blogapp:post_detail' slug=post.slug  %}" class="leading-lh-26 text-fs-20 font-semibold text-accent-hover transition duration-300">
+                              {{ post.title }}
+                              </a>
+                              <p class="mt-15 mb-5 font-Open-sans">
+                                 {{ post.body|truncatewords:20 }}
+                              </p>
+
+                               <span class="text-white text-fs-12 py-1 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">
+                              {{ post.publish|date:"M d, Y" }} - By {{ post.author }}
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Blog Post Ends -->
+                      {% endfor %}
+
+
+                      <!-- Blog Pagination Starts -->
+<nav class="mt-24">
+    <ul class="flex justify-center from-sm:mb-100 down-sm:mb-60 paginations">
+        {% for num in posts.paginator.page_range %}
+        <li>
+            <a href="?page={{ num }}" class="pagination-circle {% if num == current_page %} bg-accent {% else %} bg-black-3 {% endif %} bg-accent-hover rounded-full mx-5">{{ num }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+
+<!-- Blog Pagination Ends -->
+
+
+               </div>
+            </div>
+         </div>
+         <!-- Blog Ends -->
+
+
+
+{% endblock %}

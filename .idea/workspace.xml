@@ -5,24 +5,115 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4da698-f7fa-4803-86a7-fc06c99cf341" name="Changes" comment="Django start project">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/contact_us.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/pagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/post_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/post_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/projects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/success_sending_message.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/circle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/skins/yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/styleswitcher.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/success_sending.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/360_F_208934723_tv3JlZKwlOhF1QiQdBruyaetwLRxTQCD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/360_F_453068738_7lwG9dhfPbM8GiYHvoOQ3jwgzPCrQhlz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/63207bc758342cea5fdfba24_cover-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/632207bc758342cea5fdfba24_cover-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/6322207bc758342cea5fdfba24_cover-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/7PXNNICZU5BCPMOJJV6NQNHAUI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/880744 (online-video-cutter.com).mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/880744.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/White And Black Modern Abstract Beauty Logo (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/White And Black Modern Abstract Beauty Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/blog/blog-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/blog/blog-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/blog/blog-post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/blog/blog-post-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/blog/blog-post-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/blog/blog-post-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/dark-img-mobile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/dark.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/inline_image_preview.avif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/pexels-aleksandar-pasaric-2603464.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/navigation/close-button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/navigation/left-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/navigation/right-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/project-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/project-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/project-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/project-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/project-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/project-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/project-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/project-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/projects/project-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/pxfuel (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/pxfuel (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/pxfuel (4).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/pxfuel (5).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/pxfuel (6).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/pxfuel (7).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/pxfuel (8).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/single-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/blueviolet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/goldenrod.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/magenta.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/styleswitcher/yellowgreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/cbpGridGallery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/classie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/imagesloaded.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery-3.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery.hoverdir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/masonry.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/modernizr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/styleswitcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2ccRLzKVZmJoz2767z6GFRETnhI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -32,20 +123,28 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.blog.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "F:/Aida/دی پروژه/رزومه سازی/Blog/blog",
+    "last_opened_file_path": "F:/Aida/دی پروژه/رزومه سازی/Blog/blog/static/assets/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Aida\دی پروژه\رزومه سازی\Blog\blog\static\assets\img" />
+      <recent name="F:\Aida\دی پروژه\رزومه سازی\Blog\blog\static" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="blog" type="Python.DjangoServer" factoryName="Django server">
       <module name="blog" />
@@ -54,10 +153,11 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="blog.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -88,6 +188,30 @@
       <option name="presentableId" value="Default" />
       <updated>1708408828879</updated>
       <workItem from="1708408829920" duration="393000" />
+      <workItem from="1708409392531" duration="13358000" />
+      <workItem from="1708583631078" duration="8048000" />
+      <workItem from="1708612088395" duration="434000" />
+      <workItem from="1708616405831" duration="1411000" />
+      <workItem from="1708675914831" duration="4895000" />
+      <workItem from="1708963582985" duration="628000" />
+      <workItem from="1708968777993" duration="62000" />
+      <workItem from="1708979412338" duration="475000" />
+      <workItem from="1708984394503" duration="645000" />
+      <workItem from="1709014310014" duration="1359000" />
+      <workItem from="1709136109147" duration="81000" />
+      <workItem from="1709290301083" duration="2531000" />
+      <workItem from="1709317403537" duration="1806000" />
+      <workItem from="1709398032650" duration="154000" />
+      <workItem from="1709570042673" duration="1750000" />
+      <workItem from="1709620118420" duration="7242000" />
+      <workItem from="1709650739212" duration="1081000" />
+      <workItem from="1709741095906" duration="9348000" />
+      <workItem from="1709794309243" duration="479000" />
+      <workItem from="1709794800039" duration="16416000" />
+      <workItem from="1709922751221" duration="8577000" />
+      <workItem from="1709963274882" duration="2989000" />
+      <workItem from="1709971535524" duration="18122000" />
+      <workItem from="1710053667046" duration="10122000" />
     </task>
     <task id="LOCAL-00001" summary="Django start project">
       <option name="closed" value="true" />

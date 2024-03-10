@@ -1,0 +1,158 @@
+{% extends 'blogapp/base.html' %}
+
+{% block content %}
+      <!-- Main Content Starts -->
+      <div class="w-full h-full pages overflow-hidden">
+         <!-- Home Starts -->
+         <div class="page page--current" id="about">
+            <div class="w-full">
+              <!-- Section Title Starts -->
+               <div class="mx-auto w-full relative py-80 text-center xs:px-25 xs:pt-16 xs:pb-14 xs:bg-black-3 xs:border-b xs:border-black-4 xs:fixed xs:left-0 xs:right-0 xs:top-0 xs:z-20">
+                  <h2 class="text-fs-56 font-black font-Poppins uppercase text-white m-0 xs:text-fs-26 xs:text-left xs:leading-lh-1.2">
+                     My <span class="text-accent">Blog</span>
+                  </h2>
+                  <span class="text-fs-110 absolute left-0 right-0 top-1/2 tracking-10 leading-lh-0.7 font-extrabold text-muted -translate-y-1/2 uppercase xs:hidden">resume</span>
+               </div>
+               <!-- Section Title Ends -->
+               <div class="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
+
+         <div class="mx-auto max-w-700 down-sm:px-25 xs:pt-85">
+            <div class="text-fs-13 text-light-grey font-Open-sans">
+                <span class="pr-15">
+                    <i class="fa fa-user pr-3 text-accent"></i>
+                    steve
+                </span>
+                <span class="pr-15">
+                    <i class="fa fa-calendar pr-3 text-accent"></i>
+                    9 January 2017
+                </span>
+                <span class="pr-15">
+                    <i class="fa fa-tags pr-3 text-accent"></i>
+                    wordpress, business, economy, design
+                </span>
+            </div>
+            <h1 class="mt-13 mb-20 font-semibold capitalize text-fs-40 xs:text-fs-26 leading-lh-1.2">
+                Everything You Need To Know About Web Accessibility
+            </h1>
+            <img class="rounded-5 mb-20 w-full" src="assets/img/blog/blog-post-2.jpg" alt="">
+            <div class="font-Open-sans mb-60">
+                <p class="mb-32 leading-lh-30">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="mb-32 leading-lh-30">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="mb-32 leading-lh-30">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+         </div>
+      </div>
+      <!-- Blog Post Ends -->
+                     <!-- Facts Ends -->
+
+
+
+
+
+<!-- Display the comments -->
+
+
+                     <!-- Contact Form Ends -->
+
+                <div class="flex justify-center mb-15">
+                <div class="w-2/3 down-lg:w-full px-16 down-lg:px-0">
+                    <div class="w-full px-16 xs:px-0 mt-30">
+
+                        <ul class="pagination px-16">
+    <li><a href="#">All Comments & Views: {{ active_comments_count }}</a></li>
+</ul>
+                    </div>
+
+<!--    <div class="flex down-lg:-mx-15 flex-wrap">-->
+<!--        {% for comment in active_comments %}-->
+<!--                           <div class="w-1/2 px-15">-->
+<!--                              <div class="pt-20 xs:pt-15 pr-30 xs:pr-20 pb-25 xs:pb-20 pl-40 xs:pl-25 border border-black-3 rounded-5 mb-30 xs:mb-25">-->
+<!--                                 <h3 class="relative inline-block font-bold text-fs-30 xs:text-fs-30 text-accent leading-lh-1.2 after:content-[''] after:absolute after:-right-24 after:text-fs-33 after:font-light after:top-2">-->
+<!--                                    {{ comment.name }}-->
+<!--                                 </h3>-->
+<!--                                 <p class="relative xs:text-fs-14 pl-45 xs:pl-0 xs:before:hidden font-Open-sans font-medium before:absolute before:left-0 before:top-13 before:w-30 before:h-1 before:bg-black-5">-->
+<!--                                   {{ comment.body }}-->
+<!--                                 </p>-->
+<!--                                  <br>-->
+<!--                                  <span class="text-white text-fs-12 py-1 px-10 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">-->
+<!--                              {{ comment.created|date:"M d, Y" }}-->
+<!--                              </span>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--        {% endfor %}-->
+
+<!--                        </div>-->
+
+<div class="flex down-lg:-mx-15 flex-wrap">
+    {% for comment in active_comments %}
+        <div class="w-full">
+            <div class="pt-20 xs:pt-15 pr-30 xs:pr-20 pb-25 xs:pb-20 pl-40 xs:pl-25 border border-black-3 rounded-5 mb-30 xs:mb-25">
+                <h3 class="relative inline-block font-bold text-fs-30 xs:text-fs-30 text-accent leading-lh-1.2 after:content-[''] after:absolute after:-right-24 after:text-fs-33 after:font-light after:top-2">
+                    {{ comment.name }}
+                </h3>
+                <p class="relative xs:text-fs-14 pl-45 xs:pl-0 xs:before:hidden font-Open-sans font-medium before:absolute before:left-0 before:top-13 before:w-30 before:h-1 before:bg-black-5">
+                    {{ comment.body }}
+                </p>
+                <br>
+                <span class="text-white text-fs-12 py-1 px-10 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">
+                    {{ comment.created|date:"M d, Y" }}
+                </span>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+                <div class="flex justify-center">
+                <div class="w-2/3 down-lg:w-full px-16 down-lg:px-0">
+    <form id="commentform" class="contactform" method="post" action="{% url 'blogapp:post_detail' post.slug %}">
+        {% csrf_token %}
+        <div class="flex flex-wrap font-normal">
+            <div class="from-sm:w-1/3 down-sm:w-full px-16 xs:px-0">
+                <input autocomplete="off" class="w-full bg-black-3 text-fs-15 text-white border border-solid border-black py-11 px-26 mb-30 rounded-30 outline-0 transition duration-300 placeholder:text-placeholder field-form" type="text" name="name" placeholder="Your Name">
+            </div>
+            <div class="from-sm:w-1/3 down-sm:w-full px-16 xs:px-0">
+                <input autocomplete="off" class="w-full bg-black-3 text-fs-15 text-white border border-solid border-black py-11 px-26 mb-30 rounded-30 outline-0 transition duration-300 placeholder:text-placeholder field-form" type="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="w-full px-16 xs:px-0">
+                <textarea class="bg-black-3 w-full text-white border border-solid border-black h-160 py-12 px-26 overflow-hidden rounded-30 outline-0 transition duration-300 field-form placeholder:text-placeholder" name="body" placeholder="Your Message"></textarea>
+            </div>
+            <div class="w-full px-16 xs:px-0 mt-30">
+                <button type="submit" class="button overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out">
+                    <span class="relative z-20 text-white">Submit Comment</span>
+                    <span class="absolute -right-px bottom-0 w-55 h-55 flex items-center justify-center rounded-full text-white text-fs-19 fa fa-send bg-accent"></span>
+                </button>
+            </div>
+            <div class="w-full px-16 xs:px-0">
+                <span id="comment-message" class="output_message h-0 text-center leading-lh-46 rounded-30 text-white block mt-30"></span>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+
+
+
+
+
+
+
+               </div>
+            </div>
+         </div>
+         <!-- Home Ends -->
+
+{% endblock %}
