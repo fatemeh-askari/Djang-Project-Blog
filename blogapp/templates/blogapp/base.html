@@ -26,83 +26,11 @@
       <link rel="alternate stylesheet" type="text/css" title="red" href="/static/assets/css/skins/red.css">
       <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="/static/assets/css/skins/yellowgreen.css">
       <link rel="stylesheet" type="text/css" href="/static/assets/css/styleswitcher.css">
+      <link rel="icon" href="/static/assets/img/img.png" type="image/x-icon">
       <!-- Modernizr JS File -->
       <script src="/static/assets/js/modernizr.min.js"></script>
    </head>
    <body class="home dark font-Poppins text-fs-16 text-white font-medium leading-lh-1.6 relative w-full h-full bg-black overflow-hidden">
-      <!-- Live Style Switcher Starts - demo only -->
-<!--      <div id="switcher" class="">-->
-<!--         <div class="content-switcher">-->
-<!--            <h4>COLOR SWITCHER</h4>-->
-<!--            <ul>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="/static/assets/img/styleswitcher/purple.png" alt="purple"></a>-->
-<!--               </li>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="/static/assets/img/styleswitcher/red.png" alt="red"></a>-->
-<!--               </li>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="/static/assets/img/styleswitcher/blueviolet.png" alt="blueviolet"></a>-->
-<!--               </li>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="/static/assets/img/styleswitcher/blue.png" alt="blue"></a>-->
-<!--               </li>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="/static/assets/img/styleswitcher/goldenrod.png" alt="goldenrod"></a>-->
-<!--               </li>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="/static/assets/img/styleswitcher/magenta.png" alt="magenta"></a>-->
-<!--               </li>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="/static/assets/img/styleswitcher/yellowgreen.png" alt="yellowgreen"></a>-->
-<!--               </li>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="/static/assets/img/styleswitcher/orange.png" alt="orange"></a>-->
-<!--               </li>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="/static/assets/img/styleswitcher/green.png" alt="green"></a>-->
-<!--               </li>-->
-<!--               <li>-->
-<!--                     <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="/static/assets/img/styleswitcher/yellow.png" alt="yellow"></a>-->
-<!--               </li>-->
-<!--            </ul>-->
-<!--            <h4>TRANSITION DIRECTION</h4>-->
-<!--            <div class="flex justify-between transition-direction">-->
-<!--               <div id="cornertopleft">-->
-<!--                  <div class="arrow cornertopleft"></div>-->
-<!--               </div>-->
-<!--               <div class="active" id="top">-->
-<!--                  <div class="arrow top"></div>-->
-<!--               </div>-->
-<!--               <div id="cornertopright">-->
-<!--                  <div class="arrow cornertopright"></div>-->
-<!--               </div>-->
-<!--            </div>-->
-<!--            <div class="flex justify-between transition-direction">-->
-<!--               <div id="left">-->
-<!--                  <div class="arrow left"></div>-->
-<!--               </div>-->
-<!--               <div id="right">-->
-<!--                  <div class="arrow right"></div>-->
-<!--               </div>-->
-<!--            </div>-->
-<!--            <div class="flex justify-between transition-direction">-->
-<!--               <div id="cornerbottomleft">-->
-<!--                  <div class="arrow cornerbottomleft"></div>-->
-<!--               </div>-->
-<!--               <div id="bottom">-->
-<!--                  <div class="arrow bottom"></div>-->
-<!--               </div>-->
-<!--               <div id="cornerbottomright">-->
-<!--                  <div class="arrow cornerbottomright"></div>-->
-<!--               </div>-->
-<!--            </div>-->
-<!--            <span>Navigate between sections to see the effect.</span>-->
-<!--            <div id="hideSwitcher">&times;</div>-->
-<!--         </div>-->
-<!--      </div>-->
-<!--      <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>-->
-      <!-- Live Style Switcher Ends - demo only -->
       <!-- Preloader Starts -->
       <div id="preloader" class="fixed z-100 group left-0 top-0 h-screen w-full flex justify-center items-center pointer-events-none before:absolute before:left-0 before:top-0 before:w-1/2 before:h-full before:bg-black-3 before:transition-all before:duration-300 after:absolute after:right-0 after:top-0 after:w-1/2 after:h-full after:bg-black-3 after:transition-all after:duration-300 [&.preloaded]:before:animate-finishanimation [&.preloaded]:after:animate-finishanimation">
          <div class="line m-0 h-250 w-3 rounded-4 relative overflow-hidden transition-all duration-700 before:animate-animateline before:z-10 before:absolute before:left-0 before:top-1/2 before:w-3 before:h-0 before:-translate-y-1/2 after:animate-animatebgline after:absolute after:left-0 after:w-1 after:h-full after:bg-transparent after:-translate-y-full group-[.preloaded]:opacity-0 group-[.preloaded]:!h-full group-[.preloaded]:after:opacity-0"></div>
@@ -165,34 +93,42 @@
                   <li class="mobile-nav-element active relative pl-30 home-link">
                      <a href="{% url 'blogapp:home' %}">
                         <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <box-icon class=""  name="home" type="solid" color="#ffffff"></box-icon>
+                        <box-icon class="" name="home" type="solid" color="#ffffff"></box-icon>
                         <span class="absolute left-50 xs:left-35 font-normal">Home</span>
                      </div>
                      </a>
                   </li>
                   <li class="mobile-nav-element relative pl-30">
-                     <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <i class="fa fa-user"></i>
+                     <a href="{% url 'blogapp:post_list' %}">
+                        <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
+                        <box-icon class="" name="grid-alt" type="solid" color="#ffffff"></box-icon>
                         <span class="absolute left-50 xs:left-35 font-normal">Services</span>
-                     </div>
+                        </div>
+                     </a>
                   </li>
                   <li class="mobile-nav-element relative pl-30">
-                     <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <i class="fa fa-folder-open"></i>
+                     <a href="{% url 'blogapp:projects' %}">
+                        <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
+                        <box-icon class="" name="briefcase-alt-2" type="solid" color="#ffffff"></box-icon>
                         <span class="absolute left-50 xs:left-35 font-normal">Projects</span>
-                     </div>
+                        </div>
+                     </a>
                   </li>
                   <li class="mobile-nav-element relative pl-30">
-                     <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <i class="fa fa-envelope-open"></i>
+                     <a href="{% url 'blogapp:blog' %}">
+                        <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
+                        <box-icon class="" name="detail" type="solid" color="#ffffff"></box-icon>
                         <span class="absolute left-50 xs:left-35 font-normal">Blog</span>
-                     </div>
+                        </div>
+                     </a>
                   </li>
                   <li class="mobile-nav-element relative pl-30">
-                     <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <i class="fa fa-comments"></i>
+                     <a href="{% url 'blogapp:contact_us' %}">
+                        <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
+                        <box-icon class="" name="envelope" type="solid" color="#ffffff"></box-icon>
                         <span class="absolute left-50 xs:left-35 font-normal">Contact</span>
-                     </div>
+                        </div>
+                     </a>
                   </li>
                </ul>
             </div>

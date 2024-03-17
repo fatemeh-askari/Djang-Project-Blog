@@ -7,7 +7,7 @@
               <!-- Section Title Starts -->
                <div class="mx-auto w-full relative py-80 text-center xs:px-25 xs:pt-16 xs:pb-14 xs:bg-black-3 xs:border-b xs:border-black-4 xs:fixed xs:left-0 xs:right-0 xs:top-0 xs:z-20">
                   <h2 class="text-fs-56 font-black font-Poppins uppercase text-white m-0 xs:text-fs-26 xs:text-left xs:leading-lh-1.2">
-                     my <span class="text-accent">portfolio</span>
+                     our <span class="text-accent">Projects</span>
                   </h2>
                   <span class="text-fs-110 absolute left-0 right-0 top-1/2 tracking-10 leading-lh-0.7 font-extrabold text-muted -translate-y-1/2 uppercase xs:hidden">works</span>
                </div>
@@ -47,16 +47,20 @@
                                     <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">{{ project.title }}</h3>
                                     <div class="flex flex-wrap font-Open-sans text-fs-15">
                                        <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">{{ project.date }}</span>
+                                           <box-icon name='book-bookmark' class="pr-4 pt-10" color="#ffffff" ></box-icon>
+                                          </i><span class="project-label">Project </span>: <span class="font-semibold">{{ project.date }}</span>
                                        </div>
                                        <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">{{ project.employer }}</span>
+                                          <box-icon name='user' class="pr-4 pt-10" color="#ffffff" ></box-icon>
+                                          <span class="project-label">Client </span>: <span class="font-semibold">{{ project.employer }}</span>
                                        </div>
                                        <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">{{ project.language }}</span>
+                                           <box-icon name='code-alt' class="pr-4 pt-10" color="#ffffff" ></box-icon>
+                                          </i><span class="project-label">Langages </span>: <span class="font-semibold">{{ project.language }}</span>
                                        </div>
                                        <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">{{ project.preview }}</a></span>
+                                           <box-icon name='bolt-circle' class="pr-4 pt-10" color="#ffffff" ></box-icon>
+                                          </i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">{{ project.preview }}</a></span>
                                        </div>
                                     </div>
                                  </figcaption>
@@ -74,9 +78,9 @@
                         </ul>
                         <!-- Portfolio Navigation Starts -->
                         <nav class="down-lg:fixed down-lg:top-0 down-lg:w-full down-lg:h-102 down-lg:bg-black-3 down-lg:z-10 down-lg:border-b down-lg:border-solid down-lg:border-b-black-4 xs:h-62">
-                           <span class="nav-prev fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:left-0 down-lg:left-30 xs:w-20 xs:top-21"><img class="block" src="assets/img/projects/navigation/left-arrow.png" alt="previous"></span>
-                           <span class="nav-next fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:right-0 down-lg:right-30 xs:w-20 xs:top-21"><img class="block" src="assets/img/projects/navigation/right-arrow.png" alt="next"></span>
-                           <span class="nav-close fixed cursor-pointer from-lg:top-30 down-lg:top-35 from-lg:right-30 down-lg:left-0 down-lg:right-0 down-lg:mx-auto down-lg:block down-lg:w-32 xs:w-20 xs:top-21"><img class="block" src="assets/img/projects/navigation/close-button.png" alt="close"> </span>
+                           <span class="nav-prev fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:left-0 down-lg:left-30 xs:w-20 xs:top-21"><img class="block" src="/static/assets/img/projects/navigation/left-arrow.png" alt="previous"></span>
+                           <span class="nav-next fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:right-0 down-lg:right-30 xs:w-20 xs:top-21"><img class="block" src="/static/assets/img/projects/navigation/right-arrow.png" alt="next"></span>
+                           <span class="nav-close fixed cursor-pointer from-lg:top-30 down-lg:top-35 from-lg:right-30 down-lg:left-0 down-lg:right-0 down-lg:mx-auto down-lg:block down-lg:w-32 xs:w-20 xs:top-21"><img class="block" src="/static/assets/img/projects/navigation/close-button.png" alt="close"> </span>
                         </nav>
                         <!-- Portfolio Navigation Ends -->
                      </div>

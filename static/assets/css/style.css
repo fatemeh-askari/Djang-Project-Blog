@@ -4011,6 +4011,7 @@ ul.paginations li a {
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
+  margin-bottom: 25px;
 }
 
 .video-container video {
