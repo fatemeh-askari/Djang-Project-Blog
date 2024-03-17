@@ -3981,7 +3981,7 @@ ul.pagination li a {
 
 
 
-
+/* pagination */
 
 ul.paginations {
     display: inline-block;
@@ -4003,7 +4003,7 @@ ul.paginations li a {
 
 
 
-
+/* video home page */
 .video-container {
   position: relative;
   width: 270px; /* Adjust as needed */
